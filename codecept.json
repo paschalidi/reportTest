@@ -1,0 +1,56 @@
+{
+  "output": "./output/allure-results",
+  "helpers": {
+    "Puppeteer": {
+      "url": "",
+      "waitForTimeout": 10000,
+      "show": false,
+      "windowSize": "1200x800",
+      "restart": false,
+      "chrome": {
+        "args": [
+          "--start-maximized",
+          "--no-sandbox"
+        ]
+      }
+    },
+    "Authorization": {
+      "require": "./src/js/helpers/authorization_helper.js"
+    },
+    "PuppeteerHelper": {
+      "require": "./src/js/helpers/puppeteer_helper.js"
+    }
+  },
+  "include": {
+    "auth": "./src/js/steps/auth.js",
+    "tableElements": "./src/js/pages/tables/base/tableElements.js",
+    "adminTable": "./src/js/pages/tables/adminTable.js",
+    "templateForm": "./src/js/pages/templateForm.js",
+    "rcbElements": "./src/js/pages/rcb/base/rcbElements.js",
+    "permissionsRCB": "./src/js/pages/rcb/permissionsRCB.js",
+    "userTable": "./src/js/pages/tables/userTable.js",
+    "newReportRCB": "./src/js/pages/rcb/newReportRCB.js",
+    "changeRole": "./src/js/steps/changeRole.js",
+    "modalDialog": "./src/js/pages/modalDialog.js"
+  },
+  "mocha": {
+  },
+  "plugins": {
+    "allure": {
+      "enabled": true,
+      "targetDir":"./output/allure-results"
+    }
+  },
+  "bootstrap": false,
+  "teardown": null,
+  "hooks": [],
+  "gherkin": {},
+  "tests": "./tests/*_test.js",
+  "timeout": 10000,
+  "name": "TEST",
+  "multiple": {
+    "parallel": {
+      "chunks": 2
+    }
+  }
+}

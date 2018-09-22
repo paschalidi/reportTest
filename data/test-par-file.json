@@ -1,0 +1,66 @@
+{
+  "code": "2",
+  "name": "Тестовый отчет",
+  "label": "Отчет тестовый",
+  "nameRu": "Отчет тестовый",
+  "parameters": [
+    {
+      "code": "TIMESTAMP",
+      "name": "Дата/Время",
+      "type": {
+        "code": "TIMESTAMP"
+      },
+      "validation": {
+        "type": "and",
+        "rules": [
+          {
+            "type": "required"
+          }
+        ]
+      }
+    },
+    {
+      "code": "STRING",
+      "name": "Текст",
+      "type": {
+        "code": "STRING"
+      }
+    },
+    {
+      "code": "BOOLEAN",
+      "name": "Булево значение",
+      "type": {
+        "code": "BOOLEAN"
+      }
+    },
+    {
+      "code": "DOUBLE",
+      "name": "Число с плавающей точкой",
+      "type": {
+        "code": "DOUBLE"
+      },
+      "validation": {
+        "type": "and",
+        "rules": [
+          {
+            "type": "required"
+          }
+        ]
+      }
+    },
+    {
+      "code": "LONG",
+      "name": "Целое число",
+      "type": {
+        "code": "LONG"
+      }
+    },
+    {
+      "code": "FILE",
+      "name": "Файл",
+      "type": {
+        "code": "FILE"
+      }
+    }
+  ]
+}

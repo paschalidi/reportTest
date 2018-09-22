@@ -1,0 +1,24 @@
+{
+  "name": "codeceptjs",
+  "version": "0.0.1",
+  "description": "codecept",
+  "main": "index.js",
+  "scripts": {
+    "test": "codeceptjs run",
+    "test-parallel": "codeceptjs run-multiple parallel",
+    "debug": "codeceptjs run --debug",
+    "report": "allure generate ./output/allure-results --clean"
+  },
+  "author": "t.nuriakhmetov",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "^2.7.0",
+    "chai": "^4.1.2",
+    "codeceptjs": "^1.4.0",
+    "dotenv": "^6.0.0",
+    "moment": "^2.22.2",
+    "node-fetch": "^2.1.2",
+    "puppeteer": "^1.8.0"
+  },
+  "dependencies": {}
+}
